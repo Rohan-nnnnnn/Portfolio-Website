@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #e1f5f3;
+  background: #07191c;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --page-ivory: #07191c;
+  --page-stone: #12383b;
+  --page-charcoal: #e1f5f3;
+  --page-orange: #2dd4bf;
+
+  --text-primary: #e8fbf9;
+  --text-secondary: #b0cecd;
+  --accent: #40e0d0;
+  --border-subtle: rgba(125, 220, 211, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text-primary);
+  background:
+    radial-gradient(
+      ellipse at 80% 15%,
+      rgba(45, 212, 191, 0.14),
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 10% 75%,
+      rgba(20, 110, 115, 0.2),
+      transparent 42%
+    ),
+    linear-gradient(
+      135deg,
+      #07191c 0%,
+      #0a2428 52%,
+      #0d3033 100%
+    );
+  background-attachment: fixed;
+}
+
+body,
+button,
+a {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Manrope', sans-serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+::selection {
+  color: #041114;
+  background: #40e0d0;
+}
+
+@media (max-width: 640px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  html {
+    scroll-padding-top: 85px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
